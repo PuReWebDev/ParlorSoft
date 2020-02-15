@@ -9,4 +9,16 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-.idea
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+*.DS_Store
+.DS_Store
+vendor
+.env
+.idea/
+/.idea
+/.data
+Thumbs.db
