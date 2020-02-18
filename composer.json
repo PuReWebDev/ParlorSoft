@@ -12,7 +12,13 @@
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "5.8.*",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "infyomlabs/laravel-generator": "^5.5",
+        "laravelcollective/html": "^5.5",
+        "infyomlabs/adminlte-templates": "^5.5",
+        "infyomlabs/swagger-generator": "dev-master",
+        "appointer/swaggervel": "dev-master",
+        "doctrine/dbal": "~2.3"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -59,5 +65,12 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        { "packagist": false }
+    ]
 }
