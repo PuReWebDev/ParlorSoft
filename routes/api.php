@@ -22,3 +22,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 ////    return UserResource::collection(User::all());
 //    return new UserResource(User::find(1));
 //});
+
+
+Route::resource('shops', 'ShopAPIController');
+
+Route::resource('services', 'ServiceAPIController');
+
+Route::resource('employees', 'EmployeeAPIController');
+
+Route::resource('working_hours', 'WorkingHourAPIController');
+
+Route::resource('clients', 'ClientAPIController');
+
+Route::resource('appointments', 'AppointmentAPIController');

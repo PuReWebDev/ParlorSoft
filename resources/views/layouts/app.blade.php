@@ -118,7 +118,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    InfyOm Generator
+                    ParlorSoft
                 </a>
             </div>
 

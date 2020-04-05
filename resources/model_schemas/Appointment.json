@@ -1,0 +1,123 @@
+[
+	{
+		"name": "id",
+		"dbType": "increments",
+		"htmlType": "",
+		"validations": null,
+		"searchable": false,
+		"fillable": false,
+		"primary": true,
+		"inForm": false,
+		"inIndex": false,
+		"inView": false
+	},
+	{
+		"name": "shop_id",
+		"dbType": "integer:unsigned:foreign,shops,id",
+		"htmlType": "selectTable:shops:name,id",
+		"validations": "required|integer",
+		"searchable": true,
+		"fillable": true,
+		"primary": false,
+		"inForm": true,
+		"inIndex": true,
+		"inView": true
+	},
+	{
+		"name": "client_id",
+		"dbType": "integer:unsigned:foreign,clients,id",
+		"htmlType": "selectTable:clients:full_name,id",
+		"validations": "required|integer",
+		"searchable": true,
+		"fillable": true,
+		"primary": false,
+		"inForm": true,
+		"inIndex": true,
+		"inView": true
+	},
+	{
+		"name": "employee_id",
+		"dbType": "integer:unsigned:foreign,employees,id",
+		"htmlType": "selectTable:employees:full_name,id",
+		"validations": "required|integer",
+		"searchable": true,
+		"fillable": true,
+		"primary": false,
+		"inForm": true,
+		"inIndex": true,
+		"inView": true
+	},
+	{
+		"name": "service_id",
+		"dbType": "integer:unsigned:foreign,services,id",
+		"htmlType": "selectTable:services:name,id",
+        "relation": "1tm,Service",
+		"validations": "required|integer",
+		"searchable": true,
+		"fillable": true,
+		"primary": false,
+		"inForm": true,
+		"inIndex": true,
+		"inView": true
+	},
+	{
+		"name": "date",
+		"dbType": "date",
+		"htmlType": "date",
+		"validations": "required|date",
+		"searchable": true,
+		"fillable": true,
+		"primary": false,
+		"inForm": true,
+		"inIndex": true,
+		"inView": true
+	},
+	{
+		"name": "time",
+		"dbType": "string",
+		"htmlType": "text",
+		"validations": "required",
+		"searchable": true,
+		"fillable": true,
+		"primary": false,
+		"inForm": true,
+		"inIndex": true,
+		"inView": true
+	},
+	{
+		"name": "comments",
+		"dbType": "text",
+		"htmlType": "textarea",
+		"validations": "",
+		"searchable": true,
+		"fillable": true,
+		"primary": false,
+		"inForm": true,
+		"inIndex": true,
+		"inView": true
+	},
+	{
+		"name": "created_at",
+		"dbType": "timestamp",
+		"htmlType": null,
+		"validations": null,
+		"searchable": false,
+		"fillable": false,
+		"primary": false,
+		"inForm": false,
+		"inIndex": false,
+		"inView": true
+	},
+	{
+		"name": "updated_at",
+		"dbType": "timestamp",
+		"htmlType": null,
+		"validations": null,
+		"searchable": false,
+		"fillable": false,
+		"primary": false,
+		"inForm": false,
+		"inIndex": false,
+		"inView": true
+	}
+]
